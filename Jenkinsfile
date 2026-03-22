@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
         stage('Run API Tests') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
             post {
                 always {
@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Run Performance Tests') {
             steps {
-                sh 'mvn exec:java -Dexec.mainClass="PerformanceTest"'
+                bat 'mvn exec:java -Dexec.mainClass="PerformanceTest"'
             }
         }
     }
