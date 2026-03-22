@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://your-git-repo/book-api-test.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+        stage('Run API Tests') {
+            steps {
+                sh 'mvn test'
+            }
+            post {
+                always {
+                    publishHTML([
+                        reportDir: 'target/surefire-reports',
+                        reportFiles: 'index.html',
+                        reportName: 'TestNG Report'
+                    ])
+                }
+            }
+        }
+        stage('Run Performance Tests') {
+            steps {
+                sh 'mvn exec:java -Dexec.mainClass="PerformanceTest"'
+            }
+        }
+    }
+}

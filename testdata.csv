@@ -1,0 +1,32 @@
+title,author,expectedStatusCode
+Java编程思想,Bruce Eckel,200
+Spring实战,Craig Walls,200
+深入理解计算机系统,Randal E. Bryant,200
+Python编程从入门到实践,Eric Matthes,200
+JavaScript高级程序设计,Nicholas C. Zakas,200
+算法导论,Thomas H. Cormen,200
+代码大全,Steve McConnell,200
+重构,Martin Fowler,200
+设计模式,Erich Gamma,200
+人月神话,Frederick Brooks,200
+无效标题,,400
+,无效作者,400
+测试书1,作者A,200
+测试书2,作者B,200
+测试书3,作者C,200
+测试书4,作者D,200
+测试书5,作者E,200
+性能测试实战,John Doe,200
+自动化测试之道,James Smith,200
+持续交付,Jez Humble,200
+微服务设计,Sam Newman,200
+领域驱动设计,Eric Evans,200
+企业应用架构模式,Martin Fowler,200
+Effective Java,Joshua Bloch,200
+Clean Code,Robert C. Martin,200
+The Pragmatic Programmer,David Thomas,200
+Head First设计模式,Freeman,200
+你不懂JS,Kyle Simpson,200
+Node.js实战,Mike Cantelon,200
+Docker实战,Jeff Nickoloff,200
+Kubernetes指南,Brendan Burns,200

@@ -1,0 +1,11 @@
+id,newTitle,newAuthor,expectedStatusCode
+1,Java并发编程实战,Brian Goetz,204
+1,Effective Java,<null>,204
+1,<null>,Joshua Bloch,204
+999,不存在的书籍,未知作者,404
+-1,非法ID,非法作者,404
+1,标题含逗号,作者含逗号,204
+1,"标题带双引号","作者带双引号",204
+1,标题末尾有空格 ,作者末尾有空格 ,204
+1,<empty>,<empty>,204
+1,完全更新标题和作者,完全更新作者,204
