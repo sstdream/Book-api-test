@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Run Performance Tests') {
             steps {
-                bat 'mvn exec:java -Dexec.mainClass="PerformanceTest"'
+                bat 'mvn exec:java -Dexec.mainClass="PerformanceTest" -Dexec.classpathScope=test'
             }
         }
     }
