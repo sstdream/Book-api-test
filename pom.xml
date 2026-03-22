@@ -93,7 +93,7 @@
 <!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
 <!--                    </suiteXmlFiles>-->
                     <!-- 报告输出目录 -->
-                    <reportsDirectory>${project.build.directory}/testng-reports</reportsDirectory>
+                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                     <!-- 设置 JVM 参数（例如，如果使用 Allure 需要添加 aspectj 代理） -->
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
