@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'master', url: 'https://github.com/sstdream/Book-api-test.git'
-            }
-        }
         stage('Build') {
             steps {
                 bat 'mvn clean compile'
