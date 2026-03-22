@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://your-git-repo/book-api-test.git'
+                git branch: 'master', url: 'https://github.com/sstdream/Book-api-test.git'
             }
         }
         stage('Build') {
