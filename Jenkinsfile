@@ -1,7 +1,6 @@
 pipeline {
     agent any
     tools {
-            jdk 'JDK-11'
             maven 'Maven-3.9.12'   // 与全局工具配置中的名称一致
         }
     stages {
