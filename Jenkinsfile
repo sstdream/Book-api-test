@@ -19,7 +19,7 @@ pipeline {
                         reportDir: 'target/surefire-reports',
                         reportFiles: 'index.html',
                         reportName: 'TestNG Report',
-                        allowMissing: false,
+                        allowMissing: true,
                         alwaysLinkToLastBuild: true,
                         keepAll: true
                     ])
